@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC</title>
+    <style>
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test PopMe</h1>
+    <button id="popme">InputYourPass :]</button>
+    <div id="pass"></div>
+
+    <script>
+        document.getElementById('popme').onclick = () => {
+            var password = prompt("Enter your www.appe.com password:");
+            if (password) {
+                document.getElementById('pass').innerHTML = "Correct password: " + password + "<h1>Transfer to Apple.com : </h1>";
+            } else {
+                document.getElementById('pass').innerHTML = "<h1>No password entered.</h1>";
+            }
+        };
+    </script>
+</body>
+</html>
